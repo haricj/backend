@@ -23,10 +23,7 @@ const todos = {
 			todo = await Model.Todos.findOne({
 				where: {
 					id: req.params.id
-				},
-				include: [{
-					model: Model.Comments
-				}]
+				}
 			})
 		} catch(e) {
 				console.log(e)

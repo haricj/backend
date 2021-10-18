@@ -3,10 +3,5 @@ module.exports = (sequelize, DataTypes) => {
         title: DataTypes.STRING,
 		description: DataTypes.STRING
 	});
-
-	Todos.associate = function(models) {
-		Todos.hasMany(models.Comments)
-	}
-
 	return Todos;
 };
